@@ -27,6 +27,6 @@ public class Main {
         double mortgage = principal * (mothlyInterest * (Math.pow(1 + mothlyInterest, monthlyPayment)) / (Math.pow(1 + mothlyInterest, monthlyPayment) - 1));
         String mortgareFormater = NumberFormat.getCurrencyInstance().format(mortgage);
 
-        System.out.println("inteckning betalning: " + mortgareFormater);
+        System.out.println("Mortgage: " + mortgareFormater);
     }
 }
