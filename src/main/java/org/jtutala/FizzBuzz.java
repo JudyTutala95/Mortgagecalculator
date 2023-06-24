@@ -9,10 +9,12 @@ public class FizzBuzz {
         Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();
 
-        if ((x % 5 == 0) && (x % 3 == 0)) {
-            System.out.println("FizzBuzz");
-        } else if (x % 5 == 0) {
-            System.out.println("Fizz");
+        if (x % 5 == 0) {
+            if (x % 3 == 0) {
+                System.out.println("FizzBuzz");
+            } else {
+                System.out.println("Fizz");
+            }
         } else if (x % 3 == 0) {
             System.out.println("Buzz");
         } else {
